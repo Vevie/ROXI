@@ -1,0 +1,388 @@
+//HOME PAGE
+body{
+    font-family: 'PT Sans', sans-serif;
+    overscroll-behavior: none;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+header{
+    background-image: url(./assests/massagett.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 36rem;
+ 
+    .banner{
+        .container{
+            .text-wrapper{
+                color: white;
+                margin-top: 200px;
+
+            }
+        }
+    }
+
+
+}
+
+
+.content{
+    min-height: calc(100vh - 150px);
+}
+
+
+section{
+    .container{
+       
+        .card{
+            //border-radius: 20px;
+
+            .card-body{
+                //background-color: rgba(56, 5, 85, 0.454);
+                background-color: rgba(76, 25, 105, 0.342);
+                color: white;
+                
+            }
+        }
+    }
+
+}
+
+
+
+.second-section{
+    background-image: url(./assests/dotonwhite.png);
+    padding-top: 80px;
+    padding-bottom: 100px;
+    
+    
+    
+    .container{
+      
+        form{
+          align-items: center;
+          justify-content: center;
+
+            .form-control{
+                padding: 12px;
+            }
+
+           .btn-success{
+            color: white;
+            background-color: rgba(79, 8, 121, 0.801);
+            border-color: rgba(79, 8, 121, 0.801);
+            padding: 12px;
+           }
+        }
+
+    }
+}
+
+
+
+//BUTTONS
+.btn{
+    padding: 12px;
+    padding: 0.625rem 1rem;
+    cursor: pointer;
+
+    &.btn-primary{
+        background-color: rgba(79, 8, 121, 0.801);
+        border: rgba(79, 8, 121, 0.801);
+        border-radius: 24px;
+    }
+}
+
+
+
+
+
+
+
+//NAVBAR
+nav.navbar{
+    height: 70px;
+
+    .navbar-brand{
+        font-size: 3rem;
+        color: white;
+
+    }
+    .offcanvas-body{
+        
+        .navbar-nav{
+    
+
+            .nav-item{
+                height: 70px;
+                padding-inline-end: 10px;
+                padding-inline-start: 10px;
+
+                .nav-link{
+                    font-size: 18px;
+                    color: white; 
+                    padding-inline-end: 30px;
+                    padding-inline-start: 30px;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    
+                    &:hover{
+                        // border-bottom: 2px solid green;
+                        background-color: rgba(76, 25, 105, 0.342);
+
+                    }
+                
+
+                    //&.active{
+                        // background-color: #EAFFFF;
+                        // border-bottom: 2px solid green;
+                    // }
+                }
+        
+            
+
+            }
+        }
+    }
+
+}
+
+
+
+
+
+//SERVICES
+section#services {
+  //background-color: #f5f5f5;
+  background-color: rgba(76, 25, 105, 0.141);
+  padding: 50px 80px 80px 100px;
+
+  .services_title {
+    color: #4b0082;
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .services_subtitle {
+    color: #4b0082;
+    margin-bottom: 25px;
+    font-size: 32px;
+    font-weight: 500;
+  }
+
+  .service-item {
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 50px;
+    box-shadow: 0px 2px 10px rgba(0, 23, 1, 0.526);
+    transition: transform 0.3s ease;
+    
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    img {
+      width: 100%;
+      min-width: 100px;
+      width: 300px;
+      height: 400px;
+      min-height: auto;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.4s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .card-title {
+      color: #4b0082;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .card-text {
+      font-size: 16px;
+      padding-inline: 20px;
+
+      .duration{
+        color: white;
+        background-color: #4c008251;
+        padding: 10px;
+        border-radius: 12px;
+      }
+
+      .price{
+        color: white;
+        background-color: #4c008251;
+        padding: 10px;
+        border-radius: 12px;
+      }
+    }
+  }
+}
+
+//HIRING
+section#hiring {
+  padding: 50px 80px 80px 100px;
+
+  .hiring-title {
+    color: #6a0dad;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .job-card {
+    background-color: #fff;
+    height: max-content;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 50px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.23);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-body{
+        background-color: white;
+        .card-title {
+            color: #6a0dad;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        .card-text {
+            color: black;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+    }
+  }
+}
+
+
+//ABOUT
+section#about{
+    background-image: url(./assests/dotonwhite.png);
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .section-title {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .section-description {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .section-subtitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 15px;
+  }
+  
+  /* Header and Footer Styles */
+  header,
+  footer {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  /* Media Query for Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+  }
+}
+
+//Modal
+.modal{
+    --bs-modal-width: 500px;
+    max-height: max-content;
+
+    .modal-content{
+        border-radius: 25px;
+
+        .modal-body{
+            padding: 25px;
+            font-family: 'Nunito', sans-serif;
+
+            .btn-close{
+                height: 1px;
+                color: black;
+            }
+            
+            .modal-title{
+                font-size: 22px;
+            }
+
+            .appointment-form-wrapper{
+                .form-control{
+                    margin-bottom: 25px;
+                    color: #9CABB8;
+                    font-size: 14px;
+                    background-color: #eff1f2;
+                    padding: 14px;
+                    border: none;
+    
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+        </style>
+    <title>ROXI / Services</title>
+</head>
+<body>
+
+    <!--NAV BAR-->
+    <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+    
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <a class="navbar-brand text-black" href="landingpage.html">ROXI</a>
+                <div class="offcanvas offcanvas-start text-bg-dark justify-content-center" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkLabel">ROXI</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body justify-content-center" >
+                  <ul class="navbar-nav align-items-center text-black" >
+                  <li class="nav-item">
+                    <a class="nav-link active text-black" aria-current="page" href="landingpage.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-black" href="services.html">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-black" href="hiring.html">Hiring</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-black" href="about.html">About</a>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-primary d-sm-block d-lg-none">BOOK NOW</button>
+                  </li>
+                </ul>
+                </div>
+                </div>
+    
+    
+              <div class=" justify-content-end">
+                <button type="button" class="btn btn-primary d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#loginModal">BOOK AN APPOINTMENT</button>
+              </div>
+            </div>
+    </nav>
+    <!--NAV BAR-->
+
+    <!--CONTENT FOR SERVICES -->
+    <div class="content" style="min-height: calc(100vh-150px);">
+        <section id="services">
+            <div class="container">
+                <h2 class="services_title">Our Services</h2>
+
+                <!--Massage cards-->
+                <div class="row">
+                    <h2 class="services_subtitle">Massage</h2>
+                    <div class="col-12 col-xl-4 col-md-6">
+                        <div class="service-item">
+                            <img src="./assests/hotstone2.jpg" alt="Service 1">
+                            <h3 class="card-title">Hot Stone Massage</h3>
+                            <div class="d-flex card-text align-items-center justify-content-between">
+                                <h6 class="duration"> 90 mins</h6>
+                                <h6 class="price"> GH 350</h6>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-4 col-md-6">
+                        <div class="service-item">
+                            <img src="./assests/massage 3.jpg" alt="Service 2">
+                            <h3 class="card-title">Deep Tissue Massage</h3>
+                            <div class="d-flex card-text align-items-center justify-content-between">
+                                <h6 class="duration"> 90 mins</h6>
+                                <h6 class="price"> GH 350</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="col-12 col-xl-4 col-md-6">
+                        <div class="service-item">
+                            <img src="./assests/footmassage3.jpg" alt="Service 3">
+                            <h3 class="card-title">Foot Massage</h3>
+                            <div class="d-flex card-text align-items-center justify-content-between">
+                                <h6 class="duration"> 30 mins</h6>
+                                <h6 class="price"> GH 120</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--Massage cards-->
+
+                <!--Facial cards-->
+                <div class="row">
+                    <h2 class="services_subtitle">Facials</h2>
+                    <div class="col-12 col-xl-4 col-md-6">
+                        <div class="service-item">
+                            <img src="./assests/facials 1.jpg" alt="Service 1">
+                            <h3 class="card-title">Blemish Control</h3>
+                            <div class="d-flex card-text align-items-center justify-content-between">
+                                <h6 class="duration"> 75 mins</h6>
+                                <h6 class="price"> GH 500</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-xl-4 col-md-6">
+                        <div class="service-item">
+                            <img src="./assests/beauty 2.jpg" alt="Service 2">
+                            <h3 class="card-title">Face Lift</h3>
+                            <div class="d-flex card-text align-items-center justify-content-between">
+                                <h6 class="duration"> 60 mins</h6>
+                                <h6 class="price"> GH 300</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="col-12 col-xl-4 col-md-6">
+                        <div class="service-item">
+                            <img src="./assests/beauty 4.jpg" alt="Service 3">
+                            <h3 class="card-title">Skin Soothing Facial</h3>
+                            <div class="d-flex card-text align-items-center justify-content-between">
+                                <h6 class="duration"> 60 mins</h6>
+                                <h6 class="price"> GH 400</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--Facial cards-->
+
+                <!--Beauty cards-->
+                <div class="row">
+                    <h2 class="services_subtitle">Beauty</h2>
+                    <div class="col-12 col-xl-4 col-md-6">
+                        <div class="service-item">
+                            <img src="./assests/beauty 1.jpg" alt="Service 1">
+                            <h3 class="card-title">Eyebrow Tinting</h3>
+                            <div class="d-flex card-text align-items-center justify-content-between">
+                                <h6 class="duration"> 20 mins</h6>
+                                <h6 class="price"> GH 60</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-xl-4 col-md-6">
+                        <div class="service-item">
+                            <img src="./assests/beauty 4.jpg" alt="Service 2">
+                            <h3 class="card-title">Make up</h3>
+                            <div class="d-flex card-text align-items-center justify-content-between">
+                                <h6 class="duration"> 30 mins</h6>
+                                <h6 class="price"> GH 200</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="col-12 col-xl-4 col-md-6">
+                        <div class="service-item">
+                            <img src="./assests/eyelash.jpg" alt="Service 3">
+                            <h3 class="card-title">Eyelash</h3>
+                            <div class="d-flex card-text align-items-center justify-content-between">
+                                <h6 class="duration"> 60 mins</h6>
+                                <h6 class="price"> GH 300</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--Beauty cards-->
+
+                <!--Waxing cards-->
+                <div class="row">
+                    <h2 class="services_subtitle">Waxing</h2>
+                    <div class="col-12 col-xl-4 col-md-6">
+                        <div class="service-item">
+                            <img src="./assests/beauty 1.jpg" alt="Service 1">
+                            <h3 class="card-title">Brazilian Wax</h3>
+                            <div class="d-flex card-text align-items-center justify-content-between">
+                                <h6 class="duration"> 30 mins</h6>
+                                <h6 class="price"> GH 230</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-xl-4 col-md-6">
+                        <div class="service-item">
+                            <img src="./assests/beauty 2.jpg" alt="Service 2">
+                            <h3 class="card-title">Underarm Wax</h3>
+                            <div class="d-flex card-text align-items-center justify-content-between">
+                                <h6 class="duration"> 15 mins</h6>
+                                <h6 class="price"> GH 90</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="col-12 col-xl-4 col-md-6">
+                        <div class="service-item">
+                            <img src="./assests/beauty 4.jpg" alt="Service 3">
+                            <h3 class="card-title">Leg Wax</h3>
+                            <div class="d-flex card-text align-items-center justify-content-between">
+                                <h6 class="duration"> 30 mins</h6>
+                                <h6 class="price"> GH 200</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--Waxing cards-->
+
+            </div>
+        </section>
+    </div>
+
+
+
+    <!--FOOTER-->
+    <footer class="mt-auto text-end text-lg-start text-white bg-black">
+        <section class="p-5 pt-4">
+          <div class="row d-flex align-items-center justify-content-center">
+            <!-- Grid column -->
+            <div class="col-md-7 col-lg-8 text-center text-md-start">
+              <!-- Copyright -->
+              <div class="p-3 fw-sembold">
+                © 2022 ROXI
+              </div>
+              <!-- Copyright -->
+            </div>
+            <!-- Grid column -->
+      
+            <!-- Grid column -->
+            <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end icons">
+              <!-- Facebook -->
+              <a
+                 class="btn btn-dark btn-floating m-1"
+                 class="text-black"
+                 role="button"
+                 ><i class="fab fa-facebook-f"></i
+                ></a>
+      
+              <!-- Twitter -->
+              <a
+                 class="btn btn-dark btn-floating m-1"
+                 class="text-black"
+                 role="button"
+                 ><i class="fab fa-twitter"></i
+                ></a>
+      
+              <!-- Google -->
+              <a
+                 class="btn btn-dark btn-floating m-1"
+                 class="text-black bg-white"
+                 role="button"
+                 ><i class="fab fa-google"></i
+                ></a>
+      
+              <!-- Instagram -->
+              <a
+                 class="btn btn-dark btn-floating m-1"
+                 class="text-black"
+                 role="button"
+                 ><i class="fab fa-instagram"></i
+                ></a>
+            </div>
+            <!-- Grid column -->
+          </div>
+        </section>
+        <!-- Section: Copyright -->
+      </div>
+      <!-- Grid container -->
+    </footer>
+    <!--FOOTER-->
+     
+    
+    <!--JAVASCRIPT TAGS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./style.js"></script>
+    <!--JAVASCRIPT TAGS-->
+
+
+
+
+</body>
+</html>

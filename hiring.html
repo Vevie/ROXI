@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+      </style>
+  <title>Services</title>
+</head>
+<body style="background-color: rgba(76, 25, 105, 0.141)">
+
+     <!--NAV BAR-->  
+     <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <a class="navbar-brand" href="landingpage.html">ROXI</a>
+          <div class="offcanvas offcanvas-start text-bg-dark justify-content-center" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkLabel">ROXI</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body justify-content-center" >
+            <ul class="navbar-nav align-items-center" >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hiring.html">Hiring</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li>
+              <button type="button" class="btn btn-primary d-sm-block d-lg-none" data-bs-toggle="modal" data-bs-target="#bookModal">BOOK NOW</button>
+            </li>
+          </ul>
+          </div>
+          </div>
+
+
+        <div class=" justify-content-end">
+          <button type="button" class="btn btn-primary d-none d-lg-block"  data-bs-toggle="modal" data-bs-target="#bookModal">BOOK AN APPOINTMENT</button>
+        </div>
+      </div>
+      </nav>
+    <!--NAVBAR-->
+
+  <div class="content" style="min-height: calc(100vh-150px);">
+    <section id="hiring">
+    <div class="container">
+      <h2 class="hiring-title">Join Our Team</h2>
+
+      <div class="row" id="job-list">
+        <!-- Job cards will be dynamically added here -->
+      </div>
+    </div>
+    </section>
+    </div>
+
+
+
+    <!--FOOTER-->
+    <footer class="text-end text-lg-start text-white bg-black">
+    <section class="p-5 pt-4">
+      <div class="row d-flex align-items-center justify-content-center">
+        <!-- Grid column -->
+        <div class="col-md-7 col-lg-8 text-center text-md-start">
+          <!-- Copyright -->
+          <div class="p-3 fw-sembold">
+            © 2022 ROXI
+          </div>
+          <!-- Copyright -->
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end icons">
+          <!-- Facebook -->
+          <a
+             class="btn btn-dark btn-floating m-1"
+             class="text-black"
+             role="button"
+             ><i class="fab fa-facebook-f"></i
+            ></a>
+  
+          <!-- Twitter -->
+          <a
+             class="btn btn-dark btn-floating m-1"
+             class="text-black"
+             role="button"
+             ><i class="fab fa-twitter"></i
+            ></a>
+  
+          <!-- Google -->
+          <a
+             class="btn btn-dark btn-floating m-1"
+             class="text-black bg-white"
+             role="button"
+             ><i class="fab fa-google"></i
+            ></a>
+  
+          <!-- Instagram -->
+          <a
+             class="btn btn-dark btn-floating m-1"
+             class="text-black"
+             role="button"
+             ><i class="fab fa-instagram"></i
+            ></a>
+        </div>
+        <!-- Grid column -->
+      </div>
+    </section>
+    <!-- Section: Copyright -->
+  </div>
+  <!-- Grid container -->
+    </footer>
+    <!--FOOTER-->
+
+
+      <!-- MODAL Book -->
+  <div class="modal fade" id="bookModal" tabindex="-1" aria-labelledby="bookModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+       
+        <div class="modal-body">
+          <div class="text-end">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <h2 class="modal-title text-center pb-2">Book an Appointment</h2>
+    
+          <form class="row" id="appointment-form">
+            <div class="appointment-form-wrapper">
+
+              <div class="col-12">
+                <input type="username" id="name" class="form-control" placeholder="Name" required>
+              </div>
+  
+              <div class="col-12">
+                <input type="email" id="email" class="form-control" placeholder="Email" required>
+              </div>
+
+
+              <div class="col-12">
+              <select id="service" class="form-control" required>
+                <option value="">Select a service</option>
+                <option value="Massage">MASSAGE</option>
+                <option value="Waxing">WAXING</option>
+                <option value="Body therapy">BODY THERAPY</option>
+                <option value="Nails & Pedicure">NAILS & PEDICURE</option>
+                <option value="Facial">FACIAL</option>
+                <option value="Beauty">BEAUTY</option>
+              </select>
+              </div>
+    
+            <div class="col-12">
+              <input type="date" id="date" class="form-control" required>
+            </div>
+    
+            <div class="col-12">
+              <input type="time" id="time" class="form-control" required>
+            </div>
+
+            <div class="col-12 text-center">
+              <button type="submit" class="btn btn-primary w-50">Book Appointment</button>
+            </div>
+      
+          </div>
+          </form>
+        </div>
+
+    </div>
+  </div>
+  </div>
+  <!-- MODAL Book -->
+
+    <!--JAVASCRIPT TAGS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="./style.js"></script>
+  <!--JAVASCRIPT TAGS-->
+
+</body>
+</html>
+
+
